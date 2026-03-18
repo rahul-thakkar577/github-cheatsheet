@@ -113,3 +113,83 @@ Copies a remote repository to the local machine.
 
 Example:
 git clone https://github.com/user/repository.git
+
+# Advanced Git Commands
+
+## git merge
+Merges one branch into another.
+
+Example:
+git merge feature-login
+
+---
+
+## git merge --squash
+Combines all commits into a single commit before merging.
+
+Example:
+git merge --squash feature-profile
+
+---
+
+## git rebase
+Reapplies commits on top of another branch.
+
+Example:
+git rebase main
+
+---
+
+## git log --oneline --graph --all
+Shows commit history in graph format.
+
+Example:
+git log --oneline --graph --all
+
+---
+
+## git stash
+Temporarily saves uncommitted changes.
+
+Example:
+git stash
+
+---
+
+## git stash push -m "message"
+Stashes changes with a message.
+
+Example:
+git stash push -m "work in progress"
+
+---
+
+## git stash list
+Lists all stashes.
+
+Example:
+git stash list
+
+---
+
+## git stash pop
+Applies and removes latest stash.
+
+Example:
+git stash pop
+
+---
+
+## git stash apply
+Applies stash without removing it.
+
+Example:
+git stash apply stash@{0}
+
+---
+
+## git cherry-pick
+Applies a specific commit to current branch.
+
+Example:
+git cherry-pick <commit-hash>
