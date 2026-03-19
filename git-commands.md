@@ -193,3 +193,43 @@ Applies a specific commit to current branch.
 
 Example:
 git cherry-pick <commit-hash>
+
+# Reset & Revert Commands
+
+## git reset --soft
+Moves HEAD but keeps changes staged.
+
+Example:
+git reset --soft HEAD~1
+
+---
+
+## git reset --mixed
+Moves HEAD and unstages changes.
+
+Example:
+git reset HEAD~1
+
+---
+
+## git reset --hard
+Moves HEAD and deletes changes.
+
+Example:
+git reset --hard HEAD~1
+
+---
+
+## git revert
+Creates a new commit that undoes a previous commit.
+
+Example:
+git revert <commit-hash>
+
+---
+
+## git reflog
+Shows all actions including resets.
+
+Example:
+git reflog
